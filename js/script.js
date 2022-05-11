@@ -6,10 +6,12 @@ const lengthArray1 = document.getElementById('lenght-array1');
 const lengthArray2 = document.getElementById('lenght-array2');
 const button = document.getElementById('invio');
 const myList = document.getElementById('lista');
-const array1 = [];
-const array2 = [];
+
 button.addEventListener('click',
     function(){
+        myList.innerHTML='';
+        const array1 = [];
+        const array2 = [];
         for(let i=0; i<parseInt(lengthArray1.value); i++){
             array1.push(`parola${i+1} array1`);
         }
